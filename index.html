@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div class="wrapper">
+        <h1>Expense Tracker</h1>
+        <h2>Add a new item:</h2>
+        <form action="#">
+          <div class="grid">
+            <div class="form-item1">
+              <label for="expense-name">Name: </label>
+              <input type="text" name="name" id="expense-name" required />
+            </div>
+            <div class="form-item2">
+              <label for="date">Date: </label>
+              <input type="date" name="date" id="date" required />
+            </div>
+            <div class="form-item3">
+              <label for="amount">Amount: </label>
+              <input type="number" name="amount" id="amount" min="0" max="50000"
+              required />
+            </div>
+          </div>
+          <div class="button-div">
+            <button type="submit" class="btn">Add Expense</button>
+          </div>
+        </form>
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Date</th>
+            <th>Amount</th>
+            <th></th>
+          </tr>
+          <tr class="empty-warning">
+            <td colspan="4">No Expenses added yet!</td>
+          </tr>
+        </table>
+    </div>
+  </body>
+</html>
